@@ -156,6 +156,11 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
 
 /* Secure connection text colour */
 --secure-connection-color: var(--green-60);
+
+--in-content-box-background: var(--grey-70) !important;
+
+--in-content-table-border-dark-color: var(--grey-60) !important;
+
     --dummy-variable-for-updater-scripys: black
   }
 }

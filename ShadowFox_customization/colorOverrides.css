@@ -7,3 +7,9 @@
 
 /* Secure connection text colour */
 --secure-connection-color: var(--green-60);
+
+/* Menu background color (e.g. context menu and bookmark bar folders) */
+--in-content-box-background: var(--grey-70) !important;
+
+/* Menu separator color */
+--in-content-table-border-dark-color: var(--grey-60) !important;

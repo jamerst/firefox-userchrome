@@ -156,6 +156,11 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
 
 /* Secure connection text colour */
 --secure-connection-color: var(--green-60);
+
+--in-content-box-background: var(--grey-70) !important;
+
+--in-content-table-border-dark-color: var(--grey-60) !important;
+
     --dummy-variable-for-updater-scripys: black
   }
 }
@@ -1349,15 +1354,12 @@ toolbarbutton.bookmark-item:not(.subviewbutton):hover:not([disabled="true"]):not
     background-color: var(--grey-60) !important;
 }
 
-/* menuitem[_moz-menuactive=true], menu[_moz-menuactive=true] {
-    background-color: var(--grey-60) !important;
-} */
-
-menuitem, menupopup menu, menupopup {
+/* Set background colour of folder popup
+menuitem.bookmark-item, toolbarbutton.bookmark-item menupopup menu {
     background-color: var(--grey-70) !important;
 }
 
-/* Hide separator and  */
-menupopup menuseparator, menuitem.openintabs-menuitem {
+/* Hide separator and open all in tabs option in bookmarks folder */
+menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
     display: none !important;
 }
