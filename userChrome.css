@@ -1378,14 +1378,19 @@ menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
     display: none !important;
 }
 
+/* Make submenu arrow (>) light */
+.menu-right{
+    filter: unset !important;
+}
+
 
 /* ====== MENUS ====== */
-/* Hide items in tab context menu */
+/* Tab context menu */
 #context_sendTabToDevice {
     display: none !important;
 }
 
-/* Hide items in URL page action menu */
+/* URL page action menu */
 #pageAction-panel-bookmark, #pageAction-panel-pocket, #pageAction-panel-bookmarkSeparator, #pageAction-panel-copyURL, #pageAction-panel-emailLink, #pageAction-panel-sendToDevice, #pageAction-panel-shareURL, #pageAction-panel-webcompat-reporter_mozilla_org  {
     display: none !important;
 }
@@ -1395,12 +1400,22 @@ menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
     filter: unset !important;
 }
 
-/* Hide items in normal context menu */
+/* Normal context menu */
 #context-pocket, #context-sendpagetodevice, #context-sep-sendpagetodevice, #screenshots_mozilla_org-menuitem-_create-screenshot {
     display: none !important;
 }
 
-/* Hide items in link context menu */
+/* Link context menu */
 #context-bookmarklink, #context-savelinktopocket, #context-sendlinktodevice, #inspect-separator {
+    display: none !important;
+}
+
+/* Image context menu */
+#context-sendimage, #context-setDesktopBackground {
+    display: none !important;
+}
+
+/* Media context menu (audio/video) */
+#context-sendaudio {
     display: none !important;
 }
