@@ -1,0 +1,57 @@
+/* ====== TABS ====== */
+/* Change font and background colour of inactive tabs */
+.tab-background:not([selected]) {
+    background-color: var(--grey-80);
+}
+#TabsToolbar .tabbrowser-tab:not([selected]) {
+    color: var(--grey-40) !important;
+}
+
+/* Make loading burst animation grey */
+.tab-loading-burst[bursting]::before {
+    fill: var(--accent-1) !important
+}
+
+/* Make tabs container and title bar buttons grey instead of black */
+#TabsToolbar, .titlebar-button {
+    background-color: var(--grey-80) !important;
+}
+
+/* Fix title bar buttons hover colour */
+.titlebar-button:hover {
+    background-color: var(--grey-60) !important;
+}
+
+
+/* ====== NAV BAR ====== */
+/* Set nav bar button hover colours */
+.toolbarbutton-1 {
+    --toolbarbutton-hover-background: var(--grey-60) !important;
+    --toolbarbutton-active-background: var(--grey-60) !important;
+}
+
+/* Fix back button (for some reason it's different from the forwards button) */
+#back-button:not([disabled="false"]) > .toolbarbutton-icon {
+    background-color: transparent !important;
+    border: unset !important;
+}
+#back-button:not([disabled="true"]):not([open="true"]):not(:active):hover > .toolbarbutton-icon {
+    background-color: var(--grey-60) !important;
+}
+
+
+/* ====== BOOKMARKS BAR ====== */
+/* Set bookmark hover and folder open background colour */
+toolbarbutton.bookmark-item:not(.subviewbutton):hover:not([disabled="true"]):not([open]), toolbarbutton.bookmark-item[open="true"] {
+    background-color: var(--grey-60) !important;
+}
+
+/* Set background colour of folder popup */
+menuitem, menupopup menu, menupopup {
+    background-color: var(--grey-70) !important;
+}
+
+/* Hide separator and open all in tabs option */
+menupopup menuseparator, menuitem.openintabs-menuitem {
+    display: none !important;
+}
