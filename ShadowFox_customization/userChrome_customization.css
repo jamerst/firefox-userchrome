@@ -22,6 +22,11 @@
     background-color: var(--grey-60) !important;
 }
 
+/* Make current tab line purple in private mode */
+#main-window[privatebrowsingmode="temporary"] .tab-line[selected="true"] {
+  background-color: var(--purple-60) !important;
+}
+
 
 /* ====== NAV BAR ====== */
 /* Set nav bar button hover colours */
@@ -39,6 +44,16 @@
     background-color: var(--grey-60) !important;
 }
 
+/* Remove shadow around address bar when in focus */
+#urlbar[focused=true] {
+    box-shadow: unset !important;
+}
+
+/* Set selected autocomplete highlight colour */
+#PopupAutoCompleteRichResult richlistitem[selected="true"] {
+    background-color: var(--grey-60) !important;
+}
+
 
 /* ====== BOOKMARKS BAR ====== */
 /* Set bookmark hover and folder open background colour */
@@ -48,5 +63,32 @@ toolbarbutton.bookmark-item:not(.subviewbutton):hover:not([disabled="true"]):not
 
 /* Hide separator and open all in tabs option in bookmarks folder */
 menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
+    display: none !important;
+}
+
+
+/* ====== MENUS ====== */
+/* Hide items in tab context menu */
+#context_sendTabToDevice {
+    display: none !important;
+}
+
+/* Hide items in URL page action menu */
+#pageAction-panel-bookmark, #pageAction-panel-pocket, #pageAction-panel-bookmarkSeparator, #pageAction-panel-copyURL, #pageAction-panel-emailLink, #pageAction-panel-sendToDevice, #pageAction-panel-shareURL, #pageAction-panel-webcompat-reporter_mozilla_org  {
+    display: none !important;
+}
+
+/* Make panel arrow match panel (why is there a filter on this?) */
+.panel-arrow {
+    filter: unset !important;
+}
+
+/* Hide items in normal context menu */
+#context-pocket, #context-sendpagetodevice, #context-sep-sendpagetodevice, #screenshots_mozilla_org-menuitem-_create-screenshot {
+    display: none !important;
+}
+
+/* Hide items in link context menu */
+#context-bookmarklink, #context-savelinktopocket, #context-sendlinktodevice, #inspect-separator {
     display: none !important;
 }

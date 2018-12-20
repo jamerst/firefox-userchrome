@@ -157,10 +157,14 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
 /* Secure connection text colour */
 --secure-connection-color: var(--green-60);
 
---in-content-box-background: var(--grey-70) !important;
+/* Menu background colour (e.g. context menu, bookmark bar folders, address bar suggestions) */
+--in-content-box-background: var(--grey-80) !important;
 
+/* Menu separator colour */
 --in-content-table-border-dark-color: var(--grey-60) !important;
 
+/* URL page action panel arrow colour */
+--arrowpanel-background: var(--grey-70) !important;
     --dummy-variable-for-updater-scripys: black
   }
 }
