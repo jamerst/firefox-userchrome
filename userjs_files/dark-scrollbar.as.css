@@ -27,7 +27,7 @@ scrollbar thumb {
 
 scrollbar thumb:hover,
 scrollbar thumb:active {
-    background: #00ACED !important;
+    background: #474749 !important;
 }
 
 scrollbar:hover scrollbarbutton {
