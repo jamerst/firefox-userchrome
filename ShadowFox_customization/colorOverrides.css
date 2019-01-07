@@ -16,3 +16,6 @@
 
 /* URL page action panel arrow colour */
 --arrowpanel-background: var(--grey-70) !important;
+
+/* Unselected tab background */
+--tab-background-color: var(--grey-80) !important;

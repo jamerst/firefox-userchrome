@@ -136,6 +136,8 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
     --in-content-dark-header-background: var(--tone-9)!important;
     --tab-line-selected-color: var(--accent-2)!important;
     --secure-connection-color: var(--accent-1);
+    --tab-background-color: var(--tone-9)!important;
+    --tab-color: var(--in-content-selected-text);
     --theme-sidebar-background: #1B1B1D!important;
     --card-outline-color: var(--in-content-box-border-color)!important;
     --cm-background: var(--tone-8)!important;
@@ -165,6 +167,9 @@ regexp(".*\\.(p|P)(d|D)(f|F).*") {
 
 /* URL page action panel arrow colour */
 --arrowpanel-background: var(--grey-70) !important;
+
+/* Unselected tab background */
+--tab-background-color: var(--grey-80) !important;
     --dummy-variable-for-updater-scripys: black
   }
 }
@@ -641,7 +646,10 @@ url-prefix(https://discovery.addons.mozilla.org) {
     background: var(--in-content-page-background)!important
   }
   #homeContentsGroup checkbox[src] .checkbox-icon,
+  .arrowhead,
   .checkbox-icon,
+  .content-blocking-cookies-image,
+  .content-blocking-trackers-image,
   .content-container .icon-container .icon[src=""],
   .extension-controlled-icon,
   .snippet .block-snippet-button,
@@ -652,6 +660,8 @@ url-prefix(https://discovery.addons.mozilla.org) {
   .searchBarShownImage {
     filter: invert(80%)!important
   }
+  #trackingGroup .indent > description,
+  #trackingGroup description.indent,
   .collapsible-section .section-top-bar .info-option-manage button,
   .topic .topic-read-more,
   a:link {
@@ -796,6 +806,7 @@ url-prefix(https://discovery.addons.mozilla.org) {
     border-color: var(--in-content-box-border-color)!important
   }
   .collapsible-section .section-top-bar .info-option,
+  .content-blocking-category,
   .extension-controlled,
   .prefs-pane .prefs-modal-inner-wrapper .options,
   .sections-list .section-empty-state {
@@ -1949,6 +1960,14 @@ url-prefix("moz-extension://{e4a8a97b-f2ed-450b-b12d-ee082ba24781}/src/content/e
   .cm-staticnetAllow {
     color: var(--theme-highlight-green)!important
   }
+}
+/*! Icons */
+/*! Redirector button for dark Firefox themes */
+toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=active] {
+  filter: invert(100%) brightness(600%)
+}
+toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabled] {
+  filter: invert(100%) brightness(250%)
 }
 @-moz-document url-prefix("moz-extension://{e4a8a97b-f2ed-450b-b12d-ee082ba24781}/") {
   body,
@@ -3354,4 +3373,8 @@ url-prefix("moz-extension://{e4a8a97b-f2ed-450b-b12d-ee082ba24781}/src/content/e
   #externals {
     background-color: var(--tone-5)!important
   }
+}
+::-moz-selection {
+    color: #c0c0c0 !important;
+    background: #606060 !important;
 }
