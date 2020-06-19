@@ -134,3 +134,8 @@ toolbarbutton#alltabs-button {
 ::-moz-selection {
     background: #b1b1b3 !important;
 }
+
+/* Fix broken site information popup background */
+#identity-popup-permissions-content, .identity-popup-security-content {
+    background-image: none !important;
+  }
