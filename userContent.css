@@ -2725,7 +2725,7 @@ toolbarbutton#toggle-button--redirectoreinaregilssoncom-redirector[image*=disabl
   #modalOverlay > div > div:nth-of-type(2):hover svg {
     stroke: var(--tone-1)!important
   }
-  /*! COLORBLIND MODE START 
+  /*! COLORBLIND MODE START
        Colors can be replaced by changing the first 6 digits of the 8 digit RGBA Hex value
        #00136e = dark blue */
 body.colorBlind #netFilteringDialog > .panes > .details > div[data-status="1"],
@@ -3605,9 +3605,12 @@ body.colorBlind #netFilteringDialog > .panes > .details > div[data-status="2"],
     background-color: var(--tone-5)!important
   }
 }
+
+/* Set text highlight colour */
 ::-moz-selection {
     color: #c0c0c0 !important;
     background: #606060 !important;
 }
 
+/* Set scrollbar colours to dark */
 :root{ scrollbar-color: #474749 #323234 }

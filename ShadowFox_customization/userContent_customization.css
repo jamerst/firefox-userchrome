@@ -1,6 +1,8 @@
+/* Set text highlight colour */
 ::-moz-selection {
     color: #c0c0c0 !important;
     background: #606060 !important;
 }
 
+/* Set scrollbar colours to dark */
 :root{ scrollbar-color: #474749 #323234 }
