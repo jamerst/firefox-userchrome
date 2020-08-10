@@ -1387,7 +1387,7 @@ statuspanel .statuspanel-label {
 }
 #urlbar-input-container {
   padding: 0 !important;
-  height: 100% !important;
+  height: var(--urlbar-height) !important;
 }
 #identity-box {
   padding-block: var(--urlbar-icon-padding)
