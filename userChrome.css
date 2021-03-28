@@ -1458,3 +1458,11 @@ menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
 #identity-popup-permissions-content, .identity-popup-security-content {
   background-image: none !important;
 }
+
+/* Menu fixes */
+.menu-iconic.bookmark-item,
+#context-openlinkinusercontext-menu,
+#contentAreaContextMenu .menu-iconic,
+menupopup menu {
+  padding: 4px 6px;
+}
