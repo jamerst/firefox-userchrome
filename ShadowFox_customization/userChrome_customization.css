@@ -117,7 +117,7 @@ menuseparator.bookmarks-actions-menuseparator, menuitem.openintabs-menuitem {
 }
 
 /* Image context menu */
-#context-sendimage, #context-setDesktopBackground {
+#context-sendimage, #context-setDesktopBackground, #context-sep-setbackground, #context-sep-ctp {
     display: none !important;
 }
 
