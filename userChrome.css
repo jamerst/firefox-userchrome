@@ -41,8 +41,8 @@
     background-color: #8000d7 !important;
 }
 
-/* Remove bottom radius and bottom margin from all tabs */
-.tab-background {
+/* Remove bottom radius and bottom margin from current tab */
+tab[selected="true"] .tab-background {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     margin-bottom: 0 !important;
