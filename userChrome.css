@@ -46,7 +46,7 @@
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     margin-bottom: 0 !important;
-    min-height: calc(var(--tab-min-height) + var(--proton-tab-block-margin)) !important;
+    min-height: calc(var(--tab-min-height) + var(--tab-block-margin)) !important;
 }
 
 /* Add background to inactive tabs */
