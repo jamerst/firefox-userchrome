@@ -41,18 +41,19 @@
     background-color: #8000d7 !important;
 }
 
+/* Add background to inactive tabs */
+tab .tab-background {
+    background-color: #272727 !important;
+}
 /* Remove bottom radius and bottom margin from current tab */
-.tab-background[selected="true"] {
+tab[selected="true"] .tab-background {
+    background: #323234 !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     margin-bottom: 0 !important;
     min-height: calc(var(--tab-min-height) + var(--tab-block-margin)) !important;
 }
 
-/* Add background to inactive tabs */
-.tab-background {
-    background-color: #272727 !important;
-}
 
 .tab-loading-burst[bursting]::before {
     fill: #737373 !important
