@@ -42,18 +42,18 @@
 }
 
 /* Add background to inactive tabs */
-tab .tab-background {
+.tabbrowser-tab:not(:hover) .tab-background {
     background-color: #272727 !important;
 }
+
 /* Remove bottom radius and bottom margin from current tab */
-tab[selected="true"] .tab-background {
-    background: #323234 !important;
+.tabbrowser-tab:is([selected], [multiselected]) .tab-background {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
     margin-bottom: 0 !important;
     min-height: calc(var(--tab-min-height) + var(--tab-block-margin)) !important;
+    background: #323234 !important;
 }
-
 
 .tab-loading-burst[bursting]::before {
     fill: #737373 !important
@@ -69,10 +69,7 @@ tab[selected="true"] .tab-background {
     margin-inline-start: 0px !important;
     width: 100% !important;
     left: 0 !important;
-    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
-}
-#urlbar[breakout]:not([open]) {
-    bottom: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+    top: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2) !important;
 }
 #urlbar-input-container {
     padding: 0 !important;
