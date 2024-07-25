@@ -71,7 +71,7 @@
     left: 0 !important;
     top: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2) !important;
 }
-#urlbar-input-container {
+.urlbar-input-container {
     padding: 0 !important;
     height: var(--urlbar-height) !important;
 }
