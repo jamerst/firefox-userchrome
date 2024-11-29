@@ -65,11 +65,10 @@
 }
 
 /* Remove awful expanding URL bar */
-#urlbar[breakout] {
+#urlbar[breakout][breakout-extend] {
     margin-inline-start: 0px !important;
-    width: 100% !important;
-    left: 0 !important;
-    top: calc((var(--urlbar-container-height) - var(--urlbar-height)) / 2) !important;
+    width: var(--urlbar-width) !important;
+    top: 48px !important;
 }
 .urlbar-input-container {
     padding: 0 !important;
